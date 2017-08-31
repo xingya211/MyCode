@@ -28,8 +28,6 @@ public class CDPlayerTest {
     @Test
     public void testPlay(){
         //assertNotNull(cd);
-        System.out.println("yyyyy");
-        System.out.println("sssss");
         player.getSgtPeppers().play();
         //assertEquals("Playing\r\n", log.getLog());//获取控制台输出与期望值对比
     }
