@@ -7,10 +7,13 @@ import org.springframework.stereotype.Component;
 
 public class MediaPlayer implements CompactDisc {
 
+    private String whoAmI;
+
     private SgtPeppers sgtPeppers;
 
     public void play() {
 
+        System.out.println("I am " + whoAmI);
         sgtPeppers.play();
     }
 
@@ -19,7 +22,11 @@ public class MediaPlayer implements CompactDisc {
         this.sgtPeppers = sgtPeppers;
     }
 
-    public SgtPeppers getSgtPeppers() {
-        return sgtPeppers;
+    public String getWhoAmI() {
+        return whoAmI;
+    }
+
+    public void setWhoAmI(String whoAmI) {
+        this.whoAmI = whoAmI;
     }
 }

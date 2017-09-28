@@ -1,6 +1,6 @@
 package com.my.test;
 
-import com.my.test.config.CDPlayerConfig;
+import com.my.test.springconfig.CDPlayerConfig;
 import com.my.test.service.MediaPlayer;
 import org.junit.Rule;
 import org.junit.Test;
@@ -26,7 +26,7 @@ public class CDPlayerTest {
     public void testPlay(){
         //assertNotNull(player);
         player.play();
-        assertEquals("Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\r\n", log.getLog());//获取控制台输出与期望值对比
+        assertEquals("I am MediaPlayer\r\nPlaying Sgt. Pepper's Lonely Hearts Club Band by The Beatles\r\n", log.getLog());//获取控制台输出与期望值对比
     }
 
     @Resource(name="mediaPlayer")
